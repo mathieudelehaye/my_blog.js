@@ -3,4 +3,14 @@
 <h1>Home</h1>
 <p><%= startingContent %> </p>
 
+<a class="btn btn-primary" href="/compose" role="button">Add a New Post</a>
+
+<% posts.forEach(function(post) { %>
+
+<h1><%= post.title %></h1>
+
+<p><%= post.body.substr(0, 100) + " ... " %><a href="/posts/<%= post.title %>">Read More</a> </p>
+
+<% }); %>
+
 <%- include("partials/footer") -%>

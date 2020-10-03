@@ -1,6 +1,15 @@
-/*-------- Elements --------*/
+/*-------- Element --------*/
+
+html {
+  min-height: 100%;
+  position: relative;
+}
 
 /*-------- Classes --------*/
+.btn {
+  font-size: 14px;
+  margin: 5px 0;
+}
 
 .container-fluid {
   padding-top: 70px;
